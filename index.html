@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>W3School All Js Event</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="help.css">
+</head>
+<body>
+	
+<h1 style="color: red;">JS Start</h1>
+
+	<div class="well">
+		<h1>First JS For Date Changer</h1>
+
+		<button type="button"onclick="document.getElementById('fdate').innerHTML = Date()">Display Date and Time.</button>
+
+		<p id="fdate"></p>
+	</div>
+	
+	<div class="well">
+		<h2>What can Javascript do?</h2>
+		<p>JavaScript can change HTML attributes.</p>
+		<p>In this case JavaScript changes the source attribute of an image.</p>
+		<img id="mypic" src="RTR.jpg" style="width:200px">
+		<button onclick="document.getElementById('mypic').src='Gixxer.jpg'">Ai ta </button>
+		<button onclick="document.getElementById('mypic').src='bv15.jpg'">Na aita</button>
+	</div>
+
+	<div class="well">
+		<h1>Show Hidden HTML Elements</h1>
+
+		<p>JavaScript can show hidden HTML elements.</p>
+
+		<p id="Show" style="display:none">Show up man!</p>
+
+		<button type="button" onclick="document.getElementById('Show').style.display='block'">Show</button>
+	</div>
+
+	<div class="well">
+		<h1>Window Alert</h1>
+		<p>Just a paragraph.</p>
+
+		<script>
+		window.alert(5 + 6);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>Document Write</h1>
+		<p>First paragraph.</p>
+
+		<script>
+		document.write(5 + 6);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>Click After Write</h1>
+		<p>Second paragraph.</p>
+
+		<button type="button" onclick="document.write(5 + 6)">Click</button>
+	</div>
+
+<h1 style="color: red;">JS Syntax Start</h1> <br>
+	<div class="well">
+		<h1>JavaScript Statements X+Y=Z</h1>
+		<p>Statements are separated by semicolons.</p>
+		<p>The variables x, y, and z are assigned the values 5, 6, and 11.</p>
+		<p>Then the value of z is displayed in the paragraph below:</p>
+		<p id="values"></p>
+
+		<script>
+		var x, y, z;
+		x = 5;
+		y = 6;
+		z = x + y;
+		document.getElementById("values").innerHTML = z;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Strings</h1>
+		<p>Strings can be written with double or single quotes.</p>
+		<p id="stext"></p>
+
+		<script>
+		document.getElementById("stext").innerHTML = 'John Doe';
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Operators</h1>
+		<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+		<p id="opter"></p>
+
+		<script>
+		document.getElementById("opter").innerHTML = (5 + 6) * 10;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Expressions</h1>
+		<p>Expressions compute to values.</p>
+		<p id="rplus"></p>
+
+		<script>
+		document.getElementById("rplus").innerHTML = "John" + " "  + "Doe";
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript is Case Sensitive</h1>
+		<p>Try change lastName to lastname.</p>
+		<p id="demo"></p>
+
+		<script>
+		var lastname, lastName;
+		lastName = "Doe";
+		lastname = "Peterson";
+		document.getElementById("demo").innerHTML = lastName;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Statements</h1>
+		<p>JavaScript code blocks are written between { and }</p>
+		<button type="button" onclick="myFunction()">Click Me!</button>
+
+		<p id="text1"></p>
+		<p id="text2"></p>
+
+		<script>
+		function myFunction() {
+		    document.getElementById("text1").innerHTML = "Hello Brother.";
+		    document.getElementById("text2").innerHTML = "How are you?";
+		}
+		</script>
+	</div>
+<h1 style="color: red;">JS Comment Start</h1> <br>
+	<div class="well">
+		<h1 id="myH"></h1>
+		<p id="myP"></p>
+
+		<script>
+		/*
+		The code below will change
+		the heading with id = "myH"
+		and the paragraph with id = "myp"
+		in my web page:
+		*/
+		document.getElementById("myH").innerHTML = "My First Page";
+		document.getElementById("myP").innerHTML = "My first paragraph.";
+		</script>
+
+		<p><strong>Note:</strong> The comment block is not executed.</p>
+	</div>
+
+	<div class="well">
+		<h1 id="myH"></h1>
+		<p id="myP"></p>
+
+		<script>
+		// Change heading:
+		document.getElementById("myH").innerHTML = "My First Page";
+		// Change paragraph:
+		document.getElementById("myP").innerHTML = "My first paragraph.";
+		</script>
+
+		<p><strong>Note:</strong> The comments are not executed.</p>
+	</div>
+
+	<div class="well">
+		<p id="lcom"></p>
+
+		<script>
+		var x = 5;      // Declare x, give it the value of 5
+		var y = x + 2;  // Declare y, give it the value of x + 2 
+
+		document.getElementById("lcom").innerHTML = y; // Write y to demo
+		</script>
+
+		<p><strong>Note:</strong> The comments are not executed.</p>
+	</div>
+<h1 style="color: red;">JS Operators Start</h1> <br>
+
+	<div class="well">
+		<h1>JS  += Operator</h1>
+
+		<p id="pluseq"></p>
+
+		<script>
+		var x = 10;
+		x += 5;
+		document.getElementById("pluseq").innerHTML = x;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Operators</h1>
+
+		<p>The + operator concatenates (adds) strings.</p>
+
+		<p id="pluse"></p>
+
+		<script>
+		var txt1 = "John";
+		var txt2 = "Doe";
+		document.getElementById("pluse").innerHTML = txt1 + " " + txt2;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript operators</h1>
+
+		<p>Adding a number and a string, returns a string.</p>
+
+		<p id="hplus"></p>
+
+		<script>
+		var x = 5 + 5;
+		var y = "5" + 5;
+		var z = "Hello" + 5;
+		document.getElementById("hplus").innerHTML =
+		x + "<br>" + y + "<br>" + z;
+		</script>
+	</div>
+
+<h1 style="color: red;">JS Functions Start</h1> <br>
+	<div class="well">
+		<h1>JavaScript Functions</h1>
+
+		<p>This example calls a function which performs a calculation and returns the result:</p>
+
+		<p id="mfunc"></p>
+
+		<script>
+		function myFunction(a, b) {
+		    return a * b;
+		}
+		document.getElementById("mfunc").innerHTML = myFunction(4, 3);
+		</script>
+	</div>
+
+	<div class="well">
+		<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+		<p id="clefer"></p>
+
+		<script>
+		function toCelsius(f) {
+		    return (5/9) * (f-32);
+		}
+		document.getElementById("clefer").innerHTML = toCelsius(77);
+		</script>
+	</div>
+
+	<div class="well">
+		<p id="janina"></p>
+
+		<script>
+		document.getElementById("janina").innerHTML =
+		"The temperature is " + toCelsius(77) + " Celsius";
+
+		function toCelsius(fahrenheit) {
+		    return (5/9) * (fahrenheit-32);
+		} 
+		</script>
+	</div>
+<h1 style="color: red;">JS Objects Start</h1> <br>
+	<div class="well">
+		<p>Creating a JavaScript Variable.</p>
+
+		<p id="caf"></p>
+
+		<script>
+		var car = "Fiat";
+		document.getElementById("caf").innerHTML = car;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Creating a JavaScript Object.</p>
+
+		<p id="fac"></p>
+
+		<script>
+		var car = {type:"Fiat", model:"500", color:"white"};
+		document.getElementById("fac").innerHTML = car.type;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Creating a JavaScript Object.</p>
+
+		<p id="flae"></p>
+
+		<script>
+		var person = {
+		    firstName : "John",
+		    lastName  : "Doe",
+		    age       : 50,
+		    eyeColor  : "blue"
+		};
+
+		document.getElementById("flae").innerHTML =
+		person.firstName + " is " + person.age + " years old.";
+		</script>
+	</div>
+<h1 style="color: red;">JS Strings & String Methods</h1> <br>
+	<div class="well">
+		<p id="sting"></p>
+
+		<script>
+
+		var answer1 = "It's alright";
+		var answer2 = "He is called 'Johnny'";
+		var answer3 = 'He is called "Johnny"'; 
+
+		document.getElementById("sting").innerHTML =
+		answer1 + "<br>" + answer2 + "<br>" + answer3; 
+
+		</script>
+	</div>
+
+	<div class="well">
+		<p>The slice() method extract a part of a string
+		and returns the extracted parts in a new string:</p>
+
+		<p id="srsil"></p>
+
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		document.getElementById("srsil").innerHTML = str.slice(7,13);
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+		<button onclick="mFunction()">Change</button>
+
+		<p id="csite">Please visit Microsoft!</p>
+
+		<script>
+		function mFunction() {
+		    var str = document.getElementById("csite").innerHTML; 
+		    var txt = str.replace("Microsoft","W3Schools");
+		    document.getElementById("csite").innerHTML = txt;
+		}
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Convert string to upper case:</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="upcas">Hello World!</p>
+
+		<script>
+		function myFunction() {
+		    var text = document.getElementById("upcas").innerHTML;
+		    document.getElementById("upcas").innerHTML = text.toUpperCase();
+		}
+		</script>
+	</div>
+<h1 style="color: red;">JS Number & Number Methods</h1> <br>
+	<div class="well">
+		<p>The toString() method can output numbers as base 16 (hex), base 8 (octal), or base 2 (binary).</p>
+
+		<p id="numb"></p>
+
+		<button onclick="nFunction()">Try it</button>
+
+		<script>
+		function nFunction() {
+		    var myNumber = 128;
+		    document.getElementById("numb").innerHTML = "128 = " + 
+		    myNumber + " Decimal, " +
+		    myNumber.toString(16) + " Hexadecimal, " +
+		    myNumber.toString(8) + " Octal, " +
+		    myNumber.toString(2) + " Binary."
+		}
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Infinity is returned if you calculate a number outside the largest possible number.</p>
+
+		<button onclick="tFunction()">Infinity</button>
+
+		<p id="Infi"></p>
+
+		<script>
+		function tFunction() {
+		    var myNumber = 2; 
+		    var txt = "";
+		    while (myNumber != Infinity) {
+		        myNumber = myNumber * myNumber;
+		        txt = txt + myNumber + "<br>";
+		    }
+		    document.getElementById("Infi").innerHTML = txt;
+		}
+		</script>
+	</div>
+
+	<div class="well">
+		<p>valueOf() returns a number as a number.</p>
+		<p id="12"></p>
+
+		<script>
+		var x = 123;
+
+		document.getElementById("12").innerHTML = 
+		    x.valueOf() + "<br>" +
+		    (123).valueOf() + "<br>" +
+		    (100 + 23).valueOf();
+		</script>
+		
+	</div>
+
+	<div class="well">
+		<p>The global JavaScript function Number() converts variables to numbers:</p>
+
+		<p id="10"></p>
+
+		<script>
+		document.getElementById("10").innerHTML = 
+		    Number(true) + "<br>" +
+		    Number(false) + "<br>" +
+		    Number(new Date()) + "<br>" +
+		    Number("  10") + "<br>" +
+		    Number("10  ") + "<br>" +
+		    Number("10 6");    
+		</script>
+	</div>
+<h1 style="color: red;">JS Math Functions</h1> <br>
+	<div class="well">
+		<h1>JavaScript Math.round()</h1>
+
+		<p>Math.round(x) returns the value of x rounded down to its nearest integer:</p>
+
+		<p id="mrod"></p>
+
+		<script>
+		document.getElementById("mrod").innerHTML = Math.round(4.4);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math.pow()</h1>
+
+		<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+		<p id="mpow"></p>
+
+		<script>
+		document.getElementById("mpow").innerHTML = Math.pow(8,2);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math.sqrt()</h1>
+
+		<p>Math.sqrt(x) returns the square root of x:</p>
+
+		<p id="sqr"></p>
+
+		<script>
+		document.getElementById("sqr").innerHTML = Math.sqrt(64);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math.abs()</h1>
+
+		<p>Math.abs(x) returns the absolute (positive) value of x:</p>
+
+
+		<p id="mpos"></p>
+
+		<script>
+		document.getElementById("mpos").innerHTML = Math.abs(-4.4);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math.abs()</h1>
+
+		<p>Math.abs(x) returns the absolute (positive) value of x:</p>
+
+
+		<p id="mup"></p>
+
+		<script>
+		document.getElementById("mup").innerHTML = Math.abs(-4.4);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math.floor()</h1>
+
+		<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
+
+		<p id="mdon"></p>
+
+		<script>
+		document.getElementById("mdon").innerHTML = Math.floor(4.7);
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Math Constants</h1>
+
+		<p id="jal"></p>
+
+		<script>
+		document.getElementById("jal").innerHTML = 
+		"<p><b>Math.E:</b> " + Math.E + "</p>" +
+		"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+		"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+		"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+		"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+		"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+		"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+		"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+		</script>
+	</div>
+<h1 style="color: red;">JS Array</h1> <br>
+
+
+	<div class="well">
+		<p>Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+		<p id="acar"></p>
+
+		<script>
+		var cars = [
+		    "Saab",
+		    "Volvo",
+		    "BMW"
+		];
+		document.getElementById("acar").innerHTML = cars;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>You refer to an array element by referring to the index number.</p>
+		<p id="ooo"></p>
+
+		<script>
+		var cars = ["Saab", "Volvo", "BMW"];
+		document.getElementById("ooo").innerHTML = cars[0];
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Arrays</h1>
+		<p>Arrays use numbers to access its elements.</p>
+		<p id="46"></p>
+
+		<script>
+		var person = ["John", "Doe", 46];
+		document.getElementById("46").innerHTML = person[0];
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Arrays</h1>
+		<p>The length property returns the length of an array.</p>
+
+		<p id="food"></p>
+
+		<script>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("food").innerHTML = fruits.length;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Arrays</h1>
+
+		<p>The best way to loop through an array is using a standard for loop:</p>
+
+		<p id="ffood"></p>
+
+		<script>
+		var fruits, text, fLen, i;
+
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fLen = fruits.length;
+		text = "<ul>";
+		for (i = 0; i < fLen; i++) {
+		    text += "<li>" + fruits[i] + "</li>";
+		}
+		text += "</ul>";
+		document.getElementById("ffood").innerHTML = text;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>Joining Three Arrays</h1>
+
+		<p id="traa"></p>
+
+		<script>
+		var arr1 = ["Cecilie", "Lone"];
+		var arr2 = ["Emil", "Tobias", "Linus"];
+		var arr3 = ["Robin", "Morgan"];
+
+		var myChildren = arr1.concat(arr2, arr3); 
+
+		document.getElementById("traa").innerHTML = myChildren;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>JavaScript automatically converts an array to a string when a primitive value is expected.</p>
+
+		<p id="jatuo"></p>
+
+		<script>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("jatuo").innerHTML = fruits;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Click the button to sort the array in ascending order.</p>
+
+		<button onclick="aFunction()">Try it</button>
+
+		<p id="acng"></p>
+
+		<script>
+		var points = [40, 100, 1, 5, 25, 10];
+		document.getElementById("acng").innerHTML = points;    
+
+		function aFunction() {
+		    points.sort(function(a, b){return a - b});
+		    document.getElementById("acng").innerHTML = points;
+		}
+		</script>
+	</div>
+
+
+	<div class="well">
+		<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+		<button onclick="myFunction1()">Sort Alphabetically</button>
+		<button onclick="myFunction2()">Sort Numerically</button>
+
+		<p id="jani"></p>
+
+		<script>
+		var points = [40, 100, 1, 5, 25, 10];
+		document.getElementById("jani").innerHTML = points;    
+
+		function myFunction1() {
+		    points.sort();
+		    document.getElementById("jani").innerHTML = points;
+		}
+		function myFunction2() {
+		    points.sort(function(a, b){return a - b});
+		    document.getElementById("jani").innerHTML = points;
+		}
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Click the buttons to sort car objects on age.</p>
+
+		<button onclick="cFunction()">Sort</button>
+
+		<p id="ccar"></p>
+
+		<script>
+		var cars = [
+		{type:"Volvo", year:2016},
+		{type:"Saab", year:2001},
+		{type:"BMW", year:2010}]
+
+		displayCars();
+
+		function cFunction() {
+		    cars.sort(function(a, b){return a.year - b.year});
+		    displayCars();
+		}
+
+		function displayCars() {
+		  document.getElementById("ccar").innerHTML =
+		  cars[0].type + " " + cars[0].year + "<br>" +
+		  cars[1].type + " " + cars[1].year + "<br>" +
+		  cars[2].type + " " + cars[2].year;
+		}
+		</script>
+	</div>
+<h1 style="color: red;">JS Loop</h1> <br>
+
+	<div class="well">
+		<h1>JavaScript Loops</h1>
+
+		<p id="lop1"></p>
+
+		<script>
+		var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+		var text = "";
+		var i;
+		for (i = 0; i < cars.length; i++) {
+		    text += cars[i] + "<br>";
+		}
+		document.getElementById("lop1").innerHTML = text;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Loops</h1>
+
+		<p id="lop2"></p>
+
+		<script>
+		var text = "";
+		var i;
+		for (i = 0; i < 5; i++) {
+		    text += "The number is " + i + "<br>";
+		}
+		document.getElementById("lop2").innerHTML = text;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript Loops</h1>
+
+		<p>The for/in statement loops through the properties of an object.</p>
+
+		<p id="lop3"></p>
+
+		<script>
+		var txt = "";
+		var person = {fname:"John", lname:"Doe", age:25}; 
+		var x;
+		for (x in person) {
+		    txt += person[x] + " ";
+		}
+		document.getElementById("lop3").innerHTML = txt;
+		</script>
+	</div>
+
+	<div class="well">
+		<h1>JavaScript while</h1>
+
+		<p id="lop4"></p>
+
+		<script>
+		var text = "";
+		var i = 0;
+		while (i < 10) {
+		    text += "<br>The number is " + i;
+		    i++;
+		}
+		document.getElementById("lop4").innerHTML = text;
+		</script>
+	</div>
+
+	<div class="well">
+		<p>Click the button to get a time-based greeting:</p>
+
+		<button onclick="lFunction()">Click</button>
+
+		<p id="lop5"></p>
+
+		<script>
+		function lFunction() {
+		    var greeting;
+		    var time = new Date().getHours();
+		    if (time < 10) {
+		        greeting = "Good morning";
+		    } else if (time < 20) {
+		        greeting = "Good day";
+		    } else {
+		        greeting = "Good evening";
+		    }
+		document.getElementById("lop5").innerHTML = greeting;
+		}
+		</script>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script src="help.js"></script>
+</body>
+</html>
